@@ -6,6 +6,5 @@ cd "%WorkingDir%\Documents"
 git clone "%BaseURL%/{REPO}/_git/{REPO}"
 cd "{REPO}\{REPO}\ClientApp"
 git checkout "%BranchName%"
-npm install
-npm run build
+npm install && npm run build
 pause
